@@ -1,3 +1,5 @@
+[中文](./README.md) | [English](./README-en.md)
+
 [← 上一章](../chapter7_opc_applications/README.md) | [返回总目录](../README.md)
 
 > 本章实践以开放平台综合任务为主，不提供独立代码项目。

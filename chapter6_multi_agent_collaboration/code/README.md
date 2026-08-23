@@ -100,4 +100,4 @@ python -m pytest -q
 git diff --check
 ```
 
-详细设计见 [docs/DESIGN.md](docs/DESIGN.md) 和 [docs/DESIGN_Harness.md](docs/DESIGN_Harness.md)。
+详细设计见 [docs/DESIGN.md](docs/DESIGN.md)。

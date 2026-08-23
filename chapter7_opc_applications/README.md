@@ -1,3 +1,5 @@
+[中文](./README.md) | [English](./README-en.md)
+
 [← 上一章](../chapter6_multi_agent_collaboration/README.md) | [返回总目录](../README.md) | [下一章 →](../chapter8_advanced/README.md)
 
 > 本章实践复用第 6 章系统：[进入配套代码目录](../chapter6_multi_agent_collaboration/code/)

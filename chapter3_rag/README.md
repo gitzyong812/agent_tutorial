@@ -1,3 +1,5 @@
+[中文](./README.md) | [English](./README-en.md)
+
 [← 上一章](../chapter2_chatbot/README.md) | [返回总目录](../README.md) | [下一章 →](../chapter4_agent_memory_tools/README.md)
 
 > 本章配套代码：[进入 code 目录](./code/)

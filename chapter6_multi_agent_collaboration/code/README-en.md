@@ -99,4 +99,4 @@ python -m pytest -q
 git diff --check
 ```
 
-For detailed design documentation, see [docs/DESIGN.md](docs/DESIGN.md) and [docs/DESIGN_Harness.md](docs/DESIGN_Harness.md) (Chinese only).
+For detailed design documentation, see [docs/DESIGN.md](docs/DESIGN.md) (Chinese only).
