@@ -20,7 +20,7 @@ The tutorial follows the path “model calls → conversation → knowledge → 
 | Chapter 4 | An Agent Digital Employee with Tools and Memory | Build an agent with tool calling, a ReAct loop, and long-term memory | [Read](./chapter4_agent_memory_tools/README-en.md) | [Code](./chapter4_agent_memory_tools/code/README-en.md) |
 | Chapter 5 | Harness Engineering | Build a controllable, reliable, and traceable agent service | [Read](./chapter5_harness/README-en.md) | [Code](./chapter5_harness/code/README-en.md) |
 | Chapter 6 | Multi-Agent Collaboration Systems | Build an agent team with specialized roles and task dependencies | [Read](./chapter6_multi_agent_collaboration/README-en.md) | [Code](./chapter6_multi_agent_collaboration/code/README-en.md) |
-| Chapter 7 | Building Agent Applications and a One-Person Company | Build an integrated one-person online store application using the capabilities from earlier chapters | [Read](./chapter7_opc_applications/README-en.md) | [Reuse the Chapter 6 code](./chapter6_multi_agent_collaboration/code/README-en.md) |
+| Chapter 7 | Building Agent Applications and a One-Person Company | Build an integrated one-person online store application using the capabilities from earlier chapters | [Read](./chapter7_opc_applications/README-en.md) | [Code](./chapter6_multi_agent_collaboration/code/README-en.md) |
 | Chapter 8 | Advanced Topics and Extensions | Understand multimodality, continuous tasks, open frameworks, and agent platforms | [Read](./chapter8_advanced/README-en.md) | Integrated platform practice |
 
 ## How to Use This Tutorial
