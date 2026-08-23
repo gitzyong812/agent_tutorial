@@ -21,7 +21,7 @@
 | 第 5 章 | Harness 工程 | 完成可控、可靠、可追踪的智能体服务 | [阅读](./chapter5_harness/README.md) | [代码](./chapter5_harness/code/) |
 | 第 6 章 | 多智能体协作系统 | 完成具有角色分工和任务依赖的智能体团队 | [阅读](./chapter6_multi_agent_collaboration/README.md) | [代码](./chapter6_multi_agent_collaboration/code/) |
 | 第 7 章 | 智能体应用构建与一人公司 | 使用前述能力完成一人网店综合应用 | [阅读](./chapter7_opc_applications/README.md) | [代码](./chapter6_multi_agent_collaboration/code/) |
-| 第 8 章 | 进阶与拓展 | 理解多模态、持续任务、开放框架与智能体平台 | [阅读](./chapter8_advanced/README.md) | 平台综合实践 |
+| 第 8 章 | 进阶与拓展 | 理解多模态、持续任务、开放框架与智能体平台 | [阅读](./chapter8_advanced/README.md) | 实践 |
 
 ## 如何使用本教程
 
