@@ -2,9 +2,6 @@
 
 # Hands-On Agent Building: From AI Digital Employees to One-Person Companies
 
-**Author: Yong Zhang**<br>
-**Current Version: v1.0.0**
-
 This project is an open-source tutorial on building and developing agents for anyone interested in self-study. Across eight progressive chapters, it follows AI digital employees as a unifying theme and covers large language model calls, multi-turn conversations, RAG, tool calling, memory, Harness engineering, multi-agent collaboration, and application development. Each chapter includes foundational concepts, hands-on steps, and companion code. Basic proficiency in reading and running Python code is sufficient to get started.
 
 This project grew out of an agent course I teach. Given the limits of my knowledge and experience, omissions and errors are inevitable. I am making it open source in the hope that we can learn, discuss, and improve it together.

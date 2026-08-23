@@ -9,4 +9,17 @@
 *.mp4
 
 *.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+
 .env
+.env.*
+!.env.example
+!**/.env.example
+
+*.pem
+*.key
+*.p12
+*.pfx
