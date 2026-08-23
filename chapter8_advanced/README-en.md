@@ -158,6 +158,24 @@ Six system elements are important:
 1. **Workspace and artifacts:** inputs, intermediate results, and final files stay organized around one task.
 1. **Human review:** the user checks the plan, evidence, and artifacts and requests changes.
 
+[Figure 8-3](#fig-ch8-workbuddy-expert-center) shows the WorkBuddy specialist center. The upper area provides pre-built solutions for scenarios such as the school-opening season, content creation, investment analysis, legal consulting, and small businesses. The lower area lists specialists that can be used independently. Users can therefore begin with a business scenario or professional capability instead of model parameters and workflow nodes.
+
+<a id="fig-ch8-workbuddy-expert-center"></a>
+
+![Pre-built scenarios and specialists in the WorkBuddy specialist center](./workbuddy_demo.png)
+
+*Figure 8-3. Pre-built scenarios and specialists in the WorkBuddy specialist center*
+
+These interface elements correspond to concepts used throughout this book. A **specialist** is a digital employee with a relatively stable role, working method, Skills, and tools. A **specialist team** corresponds to the multi-agent team in Chapter 6 and the digital specialist team in an OPC. Its leader decomposes and assigns work and aggregates the results, while individual specialists perform professional subtasks. **Skills and connectors** correspond to reusable working methods, tools, and external-system interfaces. A **pre-built scenario** is a business template that combines these elements into a ready starting point for a common task.
+
+From the perspective of commercial software design, this product form illustrates three ideas:
+
+1. **Optimization for enterprise productivity and business workflows.** Capabilities are organized around tasks, sources, collaboration, and work artifacts rather than a single question-and-answer exchange.
+1. **Low adoption overhead through an intuitive interface and pre-built solutions.** Users can select an existing specialist or team and then adapt its sources and requirements instead of configuring everything from scratch.
+1. **A path toward production multi-agent scalability.** Standardized specialist, Skill, connector, and team configurations can be reused across tasks and gradually extended to more departments and business processes.
+
+These ideas show how commercial software packages model capabilities into an accessible business product. A pre-built solution is not automatically production-ready, however. Real deployment still requires checks on factual sources, data permissions, tool risk, runtime logs, cost, and human takeover. Claims of scalability should also be verified through real workloads and reliability tests.
+
 A specialist team suits work that needs different perspectives, can be divided, and produces aggregatable artifacts. A product launch might use market analysis, copywriting, visual design, and factual review. Editing one title usually needs only one specialist or ordinary conversation. More roles also mean more model calls and coordination.
 
 WorkBuddy offers modes such as asking, direct execution, or planning before execution. File modifications also depend on permission mode. Use an isolated workspace, grant only the required files and tools, and review the plan before execution.
