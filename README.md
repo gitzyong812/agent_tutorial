@@ -51,8 +51,7 @@ python -m uvicorn app.main:app --reload
 ├── chapter5_harness/                 # 第 5 章正文、图片和代码
 ├── chapter6_multi_agent_collaboration/ # 第 6 章正文、图片和代码
 ├── chapter7_opc_applications/        # 第 7 章正文
-├── chapter8_advanced/                # 第 8 章正文
-└── docs/design/                      # 课程规划和设计记录
+└── chapter8_advanced/                # 第 8 章正文
 ```
 
 ## 交流与合作

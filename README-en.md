@@ -51,8 +51,7 @@ When running the exercises, place model service settings in a local `.env` file 
 ├── chapter5_harness/                 # Chapter 5 text, images, and code
 ├── chapter6_multi_agent_collaboration/ # Chapter 6 text, images, and code
 ├── chapter7_opc_applications/        # Chapter 7 text
-├── chapter8_advanced/                # Chapter 8 text
-└── docs/design/                      # Course planning and design records
+└── chapter8_advanced/                # Chapter 8 text
 ```
 
 ## Discussion and Collaboration
