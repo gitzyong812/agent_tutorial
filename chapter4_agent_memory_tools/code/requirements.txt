@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+openai
+httpx
+jsonschema
+pytest
+python-dotenv
+python-multipart
+numpy
+# 关键词检索（BM25）可选依赖，缺失时检索自动降级为包含匹配。
+rank_bm25

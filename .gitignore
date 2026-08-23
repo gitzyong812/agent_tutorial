@@ -1,0 +1,12 @@
+.claude
+.vscode
+.DS_Store
+
+*.doc
+*.docx
+*.pdf
+
+*.mp4
+
+*.db
+.env

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数字员工框架</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- 左侧导航 -->
+    <aside class="sidebar">
+      <div class="brand" data-i18n="app_title">数字员工框架</div>
+      <nav class="nav">
+        <button class="nav-item active" data-tab="chat"><span class="nav-icon">💬</span><span data-i18n="nav_chat">对话</span></button>
+        <button class="nav-item" data-tab="knowledge"><span class="nav-icon">📚</span><span data-i18n="nav_knowledge">知识库</span></button>
+        <button class="nav-item" data-tab="models"><span class="nav-icon">⚙️</span><span data-i18n="nav_models">模型配置</span></button>
+        <button class="nav-item" data-tab="agents"><span class="nav-icon">🧑‍💼</span><span data-i18n="nav_agents">数字员工</span></button>
+      </nav>
+      <div class="lang-switch">
+        <span data-i18n="lang_label">界面语言</span>
+        <select id="ui-lang">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- 右侧内容区 -->
+    <main class="content">
+      <section id="page-chat" class="page active"></section>
+      <section id="page-knowledge" class="page"></section>
+      <section id="page-models" class="page"></section>
+      <section id="page-agents" class="page"></section>
+    </main>
+  </div>
+
+  <script src="/js/app.js"></script>
+  <script src="/vendor/purify.min.js"></script>
+  <script src="/vendor/marked.min.js"></script>
+  <script src="/js/chat.js"></script>
+  <script src="/js/knowledge.js"></script>
+  <script src="/js/models.js"></script>
+  <script src="/js/agents.js"></script>
+</body>
+</html>

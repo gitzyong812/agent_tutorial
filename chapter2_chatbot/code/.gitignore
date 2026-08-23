@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 环境与数据库
+.env
+*.db
+
+# 系统
+.DS_Store

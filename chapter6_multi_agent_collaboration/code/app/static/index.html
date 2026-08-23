@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数字员工框架</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- 左侧导航 -->
+    <aside class="sidebar">
+      <div class="brand" data-i18n="app_title">数字员工框架</div>
+      <nav class="nav">
+        <details class="nav-group" open>
+          <summary class="nav-group-title" data-i18n="nav_group_work">工作</summary>
+          <div class="nav-group-items">
+            <button class="nav-item active" data-tab="chat"><span class="nav-icon">💬</span><span data-i18n="nav_chat">对话</span></button>
+            <button class="nav-item" data-tab="group-chat"><span class="nav-icon">👥</span><span data-i18n="nav_teamwork">团队协作</span></button>
+          </div>
+        </details>
+        <details class="nav-group" open>
+          <summary class="nav-group-title" data-i18n="nav_group_management">管理</summary>
+          <div class="nav-group-items">
+            <button class="nav-item" data-tab="knowledge"><span class="nav-icon">📚</span><span data-i18n="nav_knowledge">知识库</span></button>
+            <button class="nav-item" data-tab="tools"><span class="nav-icon">🧰</span><span data-i18n="nav_tools">工具管理</span></button>
+            <button class="nav-item" data-tab="skills"><span class="nav-icon">🧩</span><span data-i18n="nav_skills">技能管理</span></button>
+            <button class="nav-item" data-tab="memories"><span class="nav-icon">🧠</span><span data-i18n="nav_memories">记忆管理</span></button>
+            <button class="nav-item" data-tab="models"><span class="nav-icon">⚙️</span><span data-i18n="nav_models">模型配置</span></button>
+            <button class="nav-item" data-tab="agents"><span class="nav-icon">🧑‍💼</span><span data-i18n="nav_agents">数字员工</span></button>
+          </div>
+        </details>
+        <details class="nav-group" open>
+          <summary class="nav-group-title" data-i18n="nav_group_system">系统</summary>
+          <div class="nav-group-items">
+            <button class="nav-item" data-tab="monitoring"><span class="nav-icon">🛡️</span><span data-i18n="nav_monitoring">系统监控</span></button>
+          </div>
+        </details>
+      </nav>
+      <div class="lang-switch">
+        <span data-i18n="lang_label">界面语言</span>
+        <select id="ui-lang">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- 右侧内容区 -->
+    <main class="content">
+      <section id="page-chat" class="page active"></section>
+      <section id="page-group-chat" class="page"></section>
+      <section id="page-knowledge" class="page"></section>
+      <section id="page-tools" class="page"></section>
+      <section id="page-skills" class="page"></section>
+      <section id="page-monitoring" class="page"></section>
+      <section id="page-memories" class="page"></section>
+      <section id="page-models" class="page"></section>
+      <section id="page-agents" class="page"></section>
+    </main>
+  </div>
+
+  <script src="/js/app.js"></script>
+  <script src="/vendor/purify.min.js"></script>
+  <script src="/vendor/marked.min.js"></script>
+  <script src="/js/chat.js"></script>
+  <script src="/js/group_chat.js"></script>
+  <script src="/js/knowledge.js"></script>
+  <script src="/js/tools.js"></script>
+  <script src="/js/skills.js"></script>
+  <script src="/js/monitoring.js"></script>
+  <script src="/js/memories.js"></script>
+  <script src="/js/models.js"></script>
+  <script src="/js/agents.js"></script>
+</body>
+</html>

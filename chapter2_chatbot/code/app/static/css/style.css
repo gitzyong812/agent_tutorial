@@ -1,0 +1,162 @@
+:root {
+  --bg: #f5f6f8;
+  --panel: #ffffff;
+  --border: #e3e6ea;
+  --text: #1f2430;
+  --muted: #8a93a2;
+  --primary: #2f6df6;
+  --primary-soft: #eaf1ff;
+  --danger: #e5484d;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.layout { display: flex; height: 100vh; }
+
+/* 侧边导航 */
+.sidebar {
+  width: 210px;
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: 18px 14px;
+}
+.brand { font-size: 17px; font-weight: 600; margin-bottom: 22px; padding: 0 6px; }
+.nav { display: flex; flex-direction: column; gap: 4px; flex: 1; }
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.nav-icon { font-size: 16px; width: 20px; text-align: center; flex: none; }
+.nav-item:hover { background: var(--bg); color: var(--text); }
+.nav-item.active {
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+.nav-item.active::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  width: 3px; height: 18px;
+  border-radius: 0 3px 3px 0;
+  background: var(--primary);
+}
+.lang-switch { font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 6px; }
+.lang-switch select { padding: 6px; border: 1px solid var(--border); border-radius: 6px; }
+
+/* 内容区 */
+.content { flex: 1; overflow: hidden; }
+.page { display: none; height: 100%; }
+.page.active { display: flex; }
+
+/* 通用元素 */
+h2 { margin: 0 0 14px; font-size: 18px; }
+button { font-family: inherit; }
+.btn {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 7px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.btn:hover { border-color: var(--primary); color: var(--primary); }
+.btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.btn-primary:hover { opacity: .92; color: #fff; }
+.btn-danger { color: var(--danger); }
+.btn-sm { padding: 4px 10px; font-size: 12px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--panel); }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 500; }
+.tag { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+.tag-published { background: #e6f7ee; color: #1a9e5a; }
+.tag-draft { background: #f0f1f3; color: var(--muted); }
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: 13px;
+  font-family: inherit;
+}
+textarea { resize: vertical; min-height: 60px; }
+
+/* 列表型页面 */
+.list-page { width: 100%; padding: 24px 28px; overflow: auto; }
+.list-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.row-actions { display: flex; gap: 6px; }
+
+/* 弹窗表单 */
+.modal-mask {
+  position: fixed; inset: 0; background: rgba(0,0,0,.35);
+  display: flex; align-items: center; justify-content: center; z-index: 50;
+}
+.modal {
+  background: var(--panel); border-radius: 12px; padding: 22px;
+  width: 560px; max-height: 86vh; overflow: auto;
+}
+.form-grid { display: grid; gap: 12px; }
+.form-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 18px; }
+
+/* 对话页 */
+.chat-page { width: 100%; display: flex; }
+.chat-sessions {
+  width: 300px; border-right: 1px solid var(--border); background: var(--panel);
+  display: flex; flex-direction: column;
+}
+.chat-sessions .sessions-head { padding: 16px; border-bottom: 1px solid var(--border); }
+.session-list { flex: 1; overflow: auto; }
+.session-item {
+  padding: 12px 16px; border-bottom: 1px solid var(--border); cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+}
+.session-item:hover { background: var(--bg); }
+.session-item.active { background: var(--primary-soft); }
+.session-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.session-item .title { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.session-meta { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.session-item .del { color: var(--muted); border: none; background: none; cursor: pointer; font-size: 14px; }
+
+.chat-header {
+  display: flex; align-items: baseline; gap: 10px;
+  padding: 14px 24px; border-bottom: 1px solid var(--border); background: var(--panel);
+}
+.chat-header-name { font-size: 15px; font-weight: 600; }
+.chat-header-model { font-size: 12px; color: var(--muted); }
+
+.chat-main { flex: 1; display: flex; flex-direction: column; }
+.chat-messages { flex: 1; overflow: auto; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+.msg { max-width: 76%; padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.6; white-space: pre-wrap; }
+.msg.user { align-self: flex-end; background: var(--primary); color: #fff; border-bottom-right-radius: 4px; }
+.msg.assistant { align-self: flex-start; background: var(--panel); border: 1px solid var(--border); border-bottom-left-radius: 4px; }
+.chat-empty { margin: auto; color: var(--muted); }
+.chat-input-bar { display: flex; gap: 10px; padding: 16px 24px; border-top: 1px solid var(--border); background: var(--panel); }
+.chat-input-bar textarea { flex: 1; min-height: 44px; max-height: 140px; }
+
+.new-session-form { display: flex; flex-direction: column; gap: 10px; padding: 16px; }
+.muted { color: var(--muted); font-size: 12px; }
